@@ -1,13 +1,13 @@
 ### Important Note
 
-# OneLoad Communication Express Server
+# Kashings Mock Server
 
-### In perspective of fintech app (oneload)
+### In perspective of 
 
 1:Please don't run npm update to install dependencies
 2:Please don't make any change in package.json manually
 3:before install any packages in project please discuss with your team
-4:use nodejs latest version 18.12.1 and latest version of pm2 for server
+4:use nodejs latest version 20.0.0 and latest version of pm2 for server
 
 ### development and coding standards
 
