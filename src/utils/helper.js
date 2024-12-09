@@ -1,28 +1,25 @@
+import fs from 'fs/promises';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path'
 import _ from "lodash";
-import chalk from "chalk";
-// import { BASE_URL } from '../config/config.js'
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 
-export const response = (res, data) => {
-  const resp = { statusCode: 1, statusDescription: "pkkk", result: data }
+export const writeFile = async (fileName, data) => {
+  const FilePath = join(__dirname, '../mockData' + fileName);
+  await fs.writeFile(FilePath, JSON.stringify(data, null, 2), 'utf8');
+}
+export const readFile = async (fileName) => {
+  const FilePath = join(__dirname, '../mockData' + fileName);
+  const data = await fs.readFile(FilePath, 'utf8');
+  return JSON.parse(data);
+}
+
+
+export const response = (res, code = 1, description = "success", result = null) => {
+  const resp = { statusCode: code, statusDescription: description, result: result }
   res.status(200).json(resp);
 };
 
-export const endPointInfo = (data) => {
-  console.log(chalk.redBright("============START============"));
-  for (const property in data) {
-    console.log(`**********${chalk.greenBright(property)}**********`);
-    const url = property === "END_POINT" ? `${data[property]}` : data[property];
-    console.log(url);
-  }
-  console.log(chalk.redBright("============END============"));
-};
-
-export const getHeaders = (headers) => {
-
-  const header = headers;
-  delete header['host']
-  delete header['postman-token']
-  console.log(header)
-  return header;
-};

@@ -1,7 +1,25 @@
-import userjson from '../../jsonData/user.json' assert { type: 'json' };
-const data=[]
+import userjson from '../../mockData/user.json' assert { type: 'json' };
+const data = []
+export const findAll = async (req, res) => {
+};
+export const find = async (req, res) => {
+
+};
+export const add = async (req, res) => {
+
+};
+export const update = async (req, res) => {
+
+};
+export const deleteById = async (req, res) => {
+
+};
+
+
+
+
 export const getUser = async (req, res) => {
-  const {body}=req
+  const { body } = req
   console.log(body)
   const resp = userjson.push(body)
   try {
@@ -12,7 +30,7 @@ export const getUser = async (req, res) => {
   }
 };
 export const potUser = async (req, res) => {
-  const {body}=req
+  const { body } = req
   console.log("'ppppp")
   const resp = data.push(body)
   try {

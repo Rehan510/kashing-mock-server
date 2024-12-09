@@ -1,0 +1,38 @@
+[
+  {
+    "name": "GBP Wallet",
+    "currency": "GBP",
+    "balance": "£44.00",
+    "bankAccount": "Park",
+    "storesUsingWallet": 78,
+    "isDefault": true,
+    "id": "c0622c32-93a5-497c-9123-b29f2996968e"
+  },
+  {
+    "name": "GBP Wallet",
+    "currency": "GBP",
+    "balance": "£44.00",
+    "bankAccount": "Park",
+    "storesUsingWallet": 78,
+    "isDefault": true,
+    "id": "f2cf735c-0ba1-4178-aba5-335631a2d60f"
+  },
+  {
+    "name": "GBP Wallet",
+    "currency": "GBP",
+    "balance": "£44.00",
+    "bankAccount": "Park",
+    "storesUsingWallet": 78,
+    "isDefault": true,
+    "id": "e636802f-4804-44fc-87e3-75a7eaf9eb11"
+  },
+  {
+    "name": "GBP Wallet",
+    "currency": "GBP",
+    "balance": "£44.00",
+    "bankAccount": "Park",
+    "storesUsingWallet": 78,
+    "isDefault": true,
+    "id": "5029bbda-d476-4268-8eda-add24aa2ff7a"
+  }
+]
