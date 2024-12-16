@@ -1,0 +1,40 @@
+{
+  "merchantInfo": {
+    "legalInformation": {
+      "companyName": "PARRK",
+      "companyType": "Limited company",
+      "registrationNumber": "01349070",
+      "registrationAddress": "GB",
+      "phone": "02083558340",
+      "website": "https://www./",
+      "vatNumber": "",
+      "timeZone": "GMT+00:00 UTC"
+    },
+    "eCommerce": {
+      "kashingID": "1975",
+      "secretKey": "c920-47ac-fb2c-035e-0d64-e889",
+      "publicKey": "a958-d743-002b-e3be-2a3a-fd82"
+    },
+    "companyAddresses": {
+      "currentAddress": {
+        "country": "GB"
+      },
+      "newAddress": {
+        "searchAddress": "",
+        "addressLine1": "",
+        "addressLine2": "",
+        "postCode": "",
+        "city": "",
+        "country": ""
+      }
+    },
+    "billing": {
+      "currentBillingAddress": {
+        "country": "GB"
+      },
+      "newBillingAddress": {
+        "email": ""
+      }
+    }
+  }
+}
