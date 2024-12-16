@@ -1,37 +1,37 @@
 
 import { writeFile, readFile } from "../../utils/helper.js"
-const fileName = "/wallets.json"
+const fileName = "/taxRates.json"
 export const findAll = async (req, res) => {
     try {
-        const result = await readFile(fileName);
+        // Sample tax rates data (This could be fetched from a file or database)
+        const taxRatesData = await readFile(fileName)
 
-        // Map through the result and format it as per the desired structure
-        const wallets = result.map(item => {
-            return {
-                id: item.id,
-                name: item.wallet.info.name,
-                currency: item.wallet.info.currency,
-                balance: item.wallet.deposits.currentDeposit,  // Assuming this is the balance
-                bankAccount: item.wallet.bankAccount.accountName || "Not Provided",  // Placeholder if no account name
-                storesUsingWallet: 78,  // You can replace this with actual logic if needed
-                isDefault: item.wallet.info.isDefault,
-                "actions": [
-                    {
-                        "action": "edit",
-                        "icon": "pencil",
-                        "tooltip": "Tooltip text "
-                    }
-                ]
-            };
-        });
+        // Map the data into the desired response format
+        const mappedTaxRates = taxRatesData.map(taxRate => ({
+            name: taxRate.taxInfo.name,
+            value: taxRate.taxingDetails.value,
+            taxType: taxRate.taxingDetails.taxType,
+            description: taxRate.taxInfo.description || "",
+            default: taxRate.taxingDetails.defaultTax
+        }));
 
-        // Return the formatted wallets
-        res.status(200).json({ wallets });
+        // Construct the response object
+        const response = {
+            addNewTaxRateButton: {
+                label: "Add New"
+            },
+            taxRates: mappedTaxRates
+        };
+
+        // Send the response
+        res.status(200).json(response);
+
     } catch (error) {
-        console.log(error.message);
-        res.status(500).json({ message: 'Error fetching' });
+        console.error(error.message);
+        res.status(500).json({ message: 'Error fetching tax rates' });
     }
 };
+
 export const find = async (req, res) => {
     const id = req.params['id'];
     try {
@@ -57,6 +57,7 @@ export const add = async (req, res) => {
         await writeFile(fileName, result)
         res.status(201).json(body);
     } catch (error) {
+        console.log(error.message);
         res.status(500).json({ message: 'Error adding' });
     }
 };

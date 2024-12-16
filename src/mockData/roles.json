@@ -1,0 +1,19 @@
+[
+  {
+    "newRole": {
+      "name": "",
+      "permissions": {
+        "viewTransactions": false,
+        "manageTransactions": false,
+        "viewAssets": false,
+        "manageAssets": false,
+        "reports": false,
+        "products": false,
+        "contacts": false,
+        "statements": false,
+        "pointOfSale": false
+      }
+    },
+    "id": "a965abfd-0fd9-4590-892a-01546782356c"
+  }
+]

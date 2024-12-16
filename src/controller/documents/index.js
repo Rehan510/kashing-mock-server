@@ -1,37 +1,59 @@
 
 import { writeFile, readFile } from "../../utils/helper.js"
-const fileName = "/wallets.json"
+const fileName = "/documents.json"
 export const findAll = async (req, res) => {
     try {
+        // Read the invoice data from the JSON file (assuming invoices.json is structured as provided)
         const result = await readFile(fileName);
 
-        // Map through the result and format it as per the desired structure
-        const wallets = result.map(item => {
-            return {
-                id: item.id,
-                name: item.wallet.info.name,
-                currency: item.wallet.info.currency,
-                balance: item.wallet.deposits.currentDeposit,  // Assuming this is the balance
-                bankAccount: item.wallet.bankAccount.accountName || "Not Provided",  // Placeholder if no account name
-                storesUsingWallet: 78,  // You can replace this with actual logic if needed
-                isDefault: item.wallet.info.isDefault,
-                "actions": [
-                    {
-                        "action": "edit",
-                        "icon": "pencil",
-                        "tooltip": "Tooltip text "
-                    }
-                ]
-            };
-        });
+        // Get pagination parameters from the query (default page is 1, itemsPerPage is 20)
+        const { page = 1, itemsPerPage = 20 } = req.query;
 
-        // Return the formatted wallets
-        res.status(200).json({ wallets });
+        // Parse invoices from the data (assuming invoices are inside an 'invoices' array)
+        let documents = result.map((d, index) => {
+            return {
+                ...d.newDocument,
+                attachment: {
+                    ...d.newDocument.attachment,
+                    "downloadLink": "https://example.com/download/document1.pdf"
+                },
+                "actions": {
+                    "download": "Download",
+                    "delete": index ? true : false
+                }
+            }
+        })
+
+        // Calculate the total number of pages
+        const totalItems = documents.length;
+        const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+        // Calculate the start and end indexes for the current page
+        const startIndex = (page - 1) * itemsPerPage;
+        const endIndex = page * itemsPerPage;
+
+        // Get the invoices for the current page
+        const paginatedInvoices = documents.slice(startIndex, endIndex);
+
+        // Construct the response object
+        const response = {
+            documents: paginatedInvoices,
+            pagination: {
+                currentPage: parseInt(page, 10),
+                totalPages: totalPages,
+                itemsPerPage: parseInt(itemsPerPage, 10),
+            },
+        };
+
+        // Send the response back to the client
+        res.status(200).json(response);
+
     } catch (error) {
-        console.log(error.message);
-        res.status(500).json({ message: 'Error fetching' });
+        console.error(error.message);
+        res.status(500).json({ message: 'Error fetching invoices' });
     }
 };
+
 export const find = async (req, res) => {
     const id = req.params['id'];
     try {
@@ -89,7 +111,7 @@ export const deleteById = async (req, res) => {
             await writeFile(fileName, result)
             res.status(204).json();  // No content to return after deletion
         } else {
-            res.status(404).json({ message: ' Not found' });
+            res.status(404).json({ message: ' Not founddd' });
         }
     } catch (error) {
         res.status(500).json({ message: 'Error deleting' });

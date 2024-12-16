@@ -1,0 +1,53 @@
+[
+    {
+        "id": 9882,
+        "status": "Online",
+        "name": "Ashington AWT",
+        "lastSeen": "2024-11-03 15:30:45 UTC",
+        "serialNumber": "62004E500F300B4ABD50342140000",
+        "store": "Ashington",
+        "salesToday": {
+            "amount": "£4.00",
+            "count": 4
+        },
+        "stock": 10,
+        "actions": {
+            "edit": true,
+            "delete": true
+        }
+    },
+    {
+        "id": 10738,
+        "status": "Online",
+        "name": "Beckenham AWT",
+        "lastSeen": "2024-11-03 14:20:18 UTC",
+        "serialNumber": "62004E5030130BACD20240710000",
+        "store": "Beckenham",
+        "salesToday": {
+            "amount": "£7.00",
+            "count": 7
+        },
+        "stock": 15,
+        "actions": {
+            "edit": true,
+            "delete": true
+        }
+    },
+    {
+        "id": 10738,
+        "status": "Online",
+        "name": "Beckenham AWT",
+        "lastSeen": "2024-11-03 14:20:18 UTC",
+        "serialNumber": "62004E5030130BACD20240710000",
+        "store": "Beckenham",
+        "salesToday": {
+            "amount": "£7.00",
+            "count": 7
+        },
+        "stock": 15,
+        "actions": {
+            "edit": true,
+            "delete": true
+        }
+    }
+]

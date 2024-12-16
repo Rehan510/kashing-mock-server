@@ -1,0 +1,24 @@
+{
+    "invoices": [
+        {
+            "date": "2024-10-24",
+            "description": "Kashing Subscription - 2024 - Oct (#M)",
+            "amount": "£2,394.00",
+            "paymentMethod": "Wallet GBP Wallet",
+            "paid": true,
+            "actions": {
+                "viewInvoice": "View Invoice"
+            }
+        },
+        {
+            "date": "2024-10-01",
+            "description": "Chargeback Handling Fee - Trx ID dZUotW9clFS - card ending 2925",
+            "amount": "£18.00",
+            "paymentMethod": "Wallet GBP Wallet",
+            "paid": true,
+            "actions": {
+                "viewInvoice": "View Invoice"
+            }
+        }
+    ]
+}

@@ -1,37 +1,35 @@
 
 import { writeFile, readFile } from "../../utils/helper.js"
-const fileName = "/wallets.json"
+const fileName = "/roles.json"
+
 export const findAll = async (req, res) => {
     try {
-        const result = await readFile(fileName);
-
-        // Map through the result and format it as per the desired structure
-        const wallets = result.map(item => {
+        const result = await readFile(fileName);  // Read the roles data from file
+        const roles = result.map((item, index) => {
+            // Map each item to the desired format
             return {
-                id: item.id,
-                name: item.wallet.info.name,
-                currency: item.wallet.info.currency,
-                balance: item.wallet.deposits.currentDeposit,  // Assuming this is the balance
-                bankAccount: item.wallet.bankAccount.accountName || "Not Provided",  // Placeholder if no account name
-                storesUsingWallet: 78,  // You can replace this with actual logic if needed
-                isDefault: item.wallet.info.isDefault,
+                id: item.id, // Assign a unique ID starting from 1
+                name: item.newRole.name || "No name provided", // Use the role name, defaulting if empty
+                users: 0, // This could be dynamic, here it's set to 0 by default
+                permissions: item.newRole.permissions || {},
                 "actions": [
                     {
                         "action": "edit",
                         "icon": "pencil",
                         "tooltip": "Tooltip text "
                     }
-                ]
+                ] // Permissions are mapped directly
             };
         });
 
-        // Return the formatted wallets
-        res.status(200).json({ wallets });
+        // Return the formatted roles
+        res.status(200).json({ roles });
     } catch (error) {
-        console.log(error.message);
-        res.status(500).json({ message: 'Error fetching' });
+        console.error(error.message);
+        res.status(500).json({ message: 'Error fetching roles' });
     }
 };
+
 export const find = async (req, res) => {
     const id = req.params['id'];
     try {

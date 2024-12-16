@@ -1,32 +1,28 @@
 
 import { writeFile, readFile } from "../../utils/helper.js"
-const fileName = "/wallets.json"
+const fileName = "/subscription.json"
 export const findAll = async (req, res) => {
     try {
-        const result = await readFile(fileName);
-
-        // Map through the result and format it as per the desired structure
-        const wallets = result.map(item => {
-            return {
-                id: item.id,
-                name: item.wallet.info.name,
-                currency: item.wallet.info.currency,
-                balance: item.wallet.deposits.currentDeposit,  // Assuming this is the balance
-                bankAccount: item.wallet.bankAccount.accountName || "Not Provided",  // Placeholder if no account name
-                storesUsingWallet: 78,  // You can replace this with actual logic if needed
-                isDefault: item.wallet.info.isDefault,
-                "actions": [
-                    {
-                        "action": "edit",
-                        "icon": "pencil",
-                        "tooltip": "Tooltip text "
-                    }
-                ]
-            };
-        });
+       const info={
+        "subscription": {
+          "info": {
+            "name": "Unattended",
+            "since": "2020-06-05",
+            "monthlyFee": "£0.00",
+            "transactionsPercent": "3.0%",
+            "contractStart": "2020-06-05",
+            "contractLength": 36,
+            "deviceMonthlyFee": {
+              "amount": "£3,876.94",
+              "devices": 197
+            }
+          }
+        }
+      }
+      
 
         // Return the formatted wallets
-        res.status(200).json({ wallets });
+        res.status(200).json(info);
     } catch (error) {
         console.log(error.message);
         res.status(500).json({ message: 'Error fetching' });

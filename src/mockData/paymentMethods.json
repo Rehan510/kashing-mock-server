@@ -1,0 +1,42 @@
+[
+  {
+    "dateAdded": "2023-01-15",
+    "brand": "Visa",
+    "type": "Credit",
+    "name": "John Doe",
+    "lastDigits": "1234",
+    "expiry": "12/24",
+    "isDefault": false,
+    "id": "7d1f6ddd-b763-4057-9480-330555003838"
+  },
+  {
+    "dateAdded": "2023-01-15",
+    "brand": "Visa",
+    "type": "Credit",
+    "name": "John Doe",
+    "lastDigits": "1234",
+    "expiry": "12/24",
+    "isDefault": false,
+    "id": "267c0077-520f-4b31-b21f-9971c8832919"
+  },
+  {
+    "dateAdded": "2023-01-15",
+    "brand": "Visa",
+    "type": "Credit",
+    "name": "John Doe",
+    "lastDigits": "1234",
+    "expiry": "12/24",
+    "isDefault": false,
+    "id": "d3e6b1cb-5695-4f58-849a-0605c446f677"
+  },
+  {
+    "dateAdded": "2023-01-15",
+    "brand": "Visa",
+    "type": "Credit",
+    "name": "John Doe",
+    "lastDigits": "1234",
+    "expiry": "12/24",
+    "isDefault": false,
+    "id": "043bac66-5374-4380-89da-7c8bd2c9a422"
+  }
+]

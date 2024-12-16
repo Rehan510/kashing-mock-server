@@ -1,0 +1,36 @@
+[
+  {
+    "productInfo": {
+      "name": "Product 14",
+      "sku": "SKU001",
+      "description": "Detailed description of Product 1",
+      "categories": "Category A"
+    },
+    "organizationInfo": {
+      "productName": "Product1",
+      "price": 0,
+      "takeAwayPrice": 0,
+      "taxRate": "Standard Rate",
+      "taxIncludedInPrice": true
+    },
+    "pricingExceptions": [
+      {
+        "day": "Monday",
+        "from": "08:00",
+        "to": "12:00",
+        "price": 5
+      },
+      {
+        "day": "Friday",
+        "from": "18:00",
+        "to": "22:00",
+        "price": 4.5
+      }
+    ],
+    "globalPricingOptions": {
+      "applyEveryStore": false,
+      "applyChangesOnDevices": false
+    },
+    "id": "4c17b0a8-9049-4ca9-8e7b-348430ca7d2c"
+  }
+]

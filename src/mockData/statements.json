@@ -1,0 +1,18 @@
+[
+    {
+        "clearedDate": "2024-11-04",
+        "type": "Wire Transfer",
+        "description": "Wire transfer - Kashing - 0E6EC85",
+        "store": "",
+        "amount": "£9,787.87",
+        "fees": "£0.0000"
+    },
+    {
+        "clearedDate": "2024-10-28",
+        "type": "Fees - Monthly Invoice",
+        "description": "Kashing Subscription - 2024 - Oct (M)",
+        "store": "",
+        "amount": "£2,394.00",
+        "fees": "£0.0000"
+    }
+]

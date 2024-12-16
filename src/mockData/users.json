@@ -1,0 +1,39 @@
+[
+  {
+    "userInfo": {
+      "name": "ok",
+      "email": "",
+      "phone": "",
+      "dateOfBirth": "",
+      "skipVerification": false
+    },
+    "storePermissions": {
+      "isAccountManager": false,
+      "stores": [
+        {
+          "storeName": "Epsom Downs",
+          "roles": {
+            "accountant": false,
+            "merchant": true,
+            "noAccess": false,
+            "salesman": false,
+            "siteManager": false,
+            "technician": false
+          }
+        },
+        {
+          "storeName": "Padiham",
+          "roles": {
+            "accountant": false,
+            "merchant": false,
+            "noAccess": true,
+            "salesman": true,
+            "siteManager": false,
+            "technician": false
+          }
+        }
+      ]
+    },
+    "id": "cf2e895d-a551-4c4f-ad97-32a4cb18a4a4"
+  }
+]

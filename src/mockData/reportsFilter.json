@@ -1,0 +1,30 @@
+{
+    "customReports": {
+        "existingReports": [
+            {
+                "title": "Products sold today",
+                "description": "Shows a list of products sold within the current day."
+            },
+            {
+                "title": "Sales and taxes for this fiscal year",
+                "description": "Displays total sales and tax information for the fiscal year to date."
+            },
+            {
+                "title": "Employee performance with customers this month",
+                "description": "Shows the performance metrics of employees in customer interactions for the current month."
+            },
+            {
+                "title": "Sales by terminal made the last week",
+                "description": "Provides data on sales made through each terminal in the last seven days."
+            }
+        ],
+        "previousMonth": [],
+        "previousYear": [],
+        "currentYear": [],
+        "currentMonth": [],
+        "addNewReportButton": {
+            "label": "Add new Report",
+            "tooltip": "Click to create a custom report"
+        }
+    }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "taxInfo": {
+      "name": "Tax Rate 3",
+      "description": "Optional description for the tax rate."
+    },
+    "taxingDetails": {
+      "taxType": "VAT",
+      "value": 20,
+      "defaultTax": false
+    },
+    "id": "fadcaab7-2b74-44ff-aeb1-ed59b847f9ec"
+  },
+  {
+    "taxInfo": {
+      "name": "Tax Rate 3",
+      "description": "Optional description for the tax rate."
+    },
+    "taxingDetails": {
+      "taxType": "VAT",
+      "value": 20,
+      "defaultTax": false
+    },
+    "id": "9dbb1254-4bb4-4326-8221-29604c203c59"
+  },
+  {
+    "taxInfo": {
+      "name": "Tax Rate 3eee",
+      "description": "Optional description for the tax rate."
+    },
+    "taxingDetails": {
+      "taxType": "VAT",
+      "value": 20,
+      "defaultTax": false
+    },
+    "id": "d9bb6dbd-c54d-42be-b5ea-7d2d1e42ea34"
+  }
+]

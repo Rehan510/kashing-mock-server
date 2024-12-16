@@ -1,0 +1,86 @@
+[
+  {
+    "store": {
+      "info": {
+        "name": "Store 88",
+        "customId": "",
+        "wallet": {
+          "name": "GBP Wallet",
+          "account": "22212951"
+        }
+      },
+      "location": {
+        "postCode": "12345",
+        "addressLine1": "123 Main Street",
+        "addressLine2": "Suite 101",
+        "city": "London",
+        "country": "United Kingdom"
+      },
+      "customAddressFields": {
+        "regionId": "",
+        "regionManager": "",
+        "depotId": "",
+        "depotManager": "",
+        "areaId": "",
+        "areaManager": ""
+      }
+    },
+    "id": "6b0ac208-4120-43d2-bfa3-2d3bf3367a98"
+  },
+  {
+    "store": {
+      "info": {
+        "name": "Store 88",
+        "customId": "",
+        "wallet": {
+          "name": "GBP Wallet",
+          "account": "22212951"
+        }
+      },
+      "location": {
+        "postCode": "12345",
+        "addressLine1": "123 Main Street",
+        "addressLine2": "Suite 101",
+        "city": "London",
+        "country": "United Kingdom"
+      },
+      "customAddressFields": {
+        "regionId": "",
+        "regionManager": "",
+        "depotId": "",
+        "depotManager": "",
+        "areaId": "",
+        "areaManager": ""
+      }
+    },
+    "id": "4bfdbc21-1d07-4017-840b-852bac314a31"
+  },
+  {
+    "store": {
+      "info": {
+        "name": "Store 12",
+        "customId": "",
+        "wallet": {
+          "name": "GBPT",
+          "account": "22212951"
+        }
+      },
+      "location": {
+        "postCode": "12345",
+        "addressLine1": "123 Main Street",
+        "addressLine2": "Suite 101",
+        "city": "London",
+        "country": "United Kingdom"
+      },
+      "customAddressFields": {
+        "regionId": "",
+        "regionManager": "",
+        "depotId": "",
+        "depotManager": "",
+        "areaId": "",
+        "areaManager": ""
+      }
+    },
+    "id": "70b0a4d0-dea4-42f5-818f-99f1aad2e443"
+  }
+]
