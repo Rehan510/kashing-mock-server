@@ -26,5 +26,33 @@
       ]
     },
     "id": "51612dc6-8f3a-43dd-911b-cda848808472"
+  },
+  {
+    "wallet": {
+      "info": {
+        "name": "Wallet 2",
+        "currency": "GBP",
+        "isDefault": false
+      },
+      "deposits": {
+        "currentDeposit": "£0.00",
+        "depositToKeep": "0.00"
+      },
+      "bankAccount": {
+        "accountName": "",
+        "accountNumber": "",
+        "accountNumberConfirmation": "",
+        "country": "United Kingdom",
+        "sortCode": ""
+      },
+      "actions": [
+        {
+          "action": "edit",
+          "icon": "pencil",
+          "tooltip": "Tooltip text "
+        }
+      ]
+    },
+    "id": "da3e24ab-0542-4158-9c11-7db2cf87fd11"
   }
 ]

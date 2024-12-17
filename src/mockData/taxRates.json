@@ -34,5 +34,17 @@
       "defaultTax": false
     },
     "id": "d9bb6dbd-c54d-42be-b5ea-7d2d1e42ea34"
+  },
+  {
+    "taxInfo": {
+      "name": "Tax Rate 3",
+      "description": "Optional description for the tax rate."
+    },
+    "taxingDetails": {
+      "taxType": "VAT",
+      "value": 20,
+      "defaultTax": false
+    },
+    "id": "8654c168-ad44-481c-aaf7-ddd38cfef020"
   }
 ]

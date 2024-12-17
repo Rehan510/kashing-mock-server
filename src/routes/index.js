@@ -14,6 +14,7 @@ import users from "./users.js"
 import taxRates from "./taxRates.js"
 import reports from "./reports.js"
 import merchant from "./merchant.js"
+import address from "./address.js"
 const router = express.Router();
 const defaultRoutes = [
   { path: "/documents", route: documents, isActive: true },
@@ -31,6 +32,7 @@ const defaultRoutes = [
   { path: "/tax-rates", route: taxRates, isActive: true },
   { path: "/reports", route: reports, isActive: true },
   { path: "/merchant", route: merchant, isActive: true },
+  { path: "/address", route:address , isActive: true },
 ];
 
 

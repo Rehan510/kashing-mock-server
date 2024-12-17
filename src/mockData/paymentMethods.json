@@ -38,5 +38,15 @@
     "expiry": "12/24",
     "isDefault": false,
     "id": "043bac66-5374-4380-89da-7c8bd2c9a422"
+  },
+  {
+    "dateAdded": "2023-01-15",
+    "brand": "Visa",
+    "type": "Credit",
+    "name": "John Doe",
+    "lastDigits": "1234",
+    "expiry": "12/24",
+    "isDefault": false,
+    "id": "3a4bc302-e934-43d2-bb99-bba42c59ae88"
   }
 ]

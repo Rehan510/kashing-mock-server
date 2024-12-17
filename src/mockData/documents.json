@@ -16,5 +16,23 @@
       }
     ],
     "id": "5a2ff056-7044-40b1-90e8-298bf5211555"
+  },
+  {
+    "newDocument": {
+      "title": "",
+      "description": "",
+      "attachment": {
+        "fileName": "",
+        "fileData": ""
+      }
+    },
+    "actions": [
+      {
+        "action": "save",
+        "label": "Save",
+        "tooltip": "Save the new document"
+      }
+    ],
+    "id": "bb1dc61a-52fa-4eb3-9069-7d961472ac8d"
   }
 ]

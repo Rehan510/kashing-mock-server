@@ -12,7 +12,8 @@ export const findAll = async (req, res) => {
             value: taxRate.taxingDetails.value,
             taxType: taxRate.taxingDetails.taxType,
             description: taxRate.taxInfo.description || "",
-            default: taxRate.taxingDetails.defaultTax
+            default: taxRate.taxingDetails.defaultTax,
+            actions:[]
         }));
 
         // Construct the response object

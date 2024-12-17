@@ -17,7 +17,8 @@ export const findAll = async (req, res) => {
                 name: card.name,
                 lastDigits: card.lastDigits,
                 expiry: card.expiry,
-                isDefault: card.isDefault
+                isDefault: card.isDefault,
+                actions:[]
             };
         });
 

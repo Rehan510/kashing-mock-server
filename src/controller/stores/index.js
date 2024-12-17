@@ -77,7 +77,8 @@ export const findAll = async (req, res) => {
                 salesCount: 0,     // Placeholder sales count
                 users: 2,          // Placeholder for users
                 devices: 1,        // Placeholder for devices
-                latestActivity: "2024-10-30" // Placeholder for latest activity
+                latestActivity: "2024-10-30", // Placeholder for latest activity,
+                actions :[],
             })),
             filters: {
                 wallet: ["GBP Wallet", "USD Wallet", "EUR Wallet"],
@@ -169,5 +170,27 @@ export const deleteById = async (req, res) => {
         }
     } catch (error) {
         res.status(500).json({ message: 'Error deleting' });
+    }
+};
+
+export const getAdrress = async (req, res) => {
+    const { postCode } = req.query;
+    
+   
+    try {
+        if (!postCode) {
+            return res.status(400).send('Postal code is required');
+          }
+        const result = await readFile(fileName)
+        const data = result.find(item => item.store.location.postCode === postCode);
+       
+  
+        if (data) {
+            res.status(200).json(data.store.location);
+        } else {
+            res.status(404).json({ message: ' Not found' });
+        }
+    } catch (error) {
+        res.status(500).json({ message: 'Error fetching' });
     }
 };
