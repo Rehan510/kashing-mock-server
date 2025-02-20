@@ -17,15 +17,15 @@
       "description": "Optional description for the tax rate."
     },
     "taxingDetails": {
-      "taxType": "VAT",
+      "taxType": "State Taxes ",
       "value": 20,
-      "defaultTax": false
+      "defaultTax": true
     },
     "id": "9dbb1254-4bb4-4326-8221-29604c203c59"
   },
   {
     "taxInfo": {
-      "name": "Tax Rate 3eee",
+      "name": "Tax Rate 4ee",
       "description": "Optional description for the tax rate."
     },
     "taxingDetails": {

@@ -1,10 +1,10 @@
 [
   {
     "newRole": {
-      "name": "",
+      "name": "accountent",
       "permissions": {
-        "viewTransactions": false,
-        "manageTransactions": false,
+        "viewTransactions": true,
+        "manageTransactions": true,
         "viewAssets": false,
         "manageAssets": false,
         "reports": false,
@@ -45,9 +45,9 @@
     "newRole": {
       "name": "",
       "permissions": {
-        "viewTransactions": false,
-        "manageTransactions": false,
-        "viewAssets": false,
+        "viewTransactions": true,
+        "manageTransactions": true,
+        "viewAssets": true,
         "manageAssets": false,
         "reports": false,
         "products": false,
@@ -56,6 +56,23 @@
         "pointOfSale": false
       }
     },
-    "id": "1f42c6b5-1ddb-440d-9c76-3972987b571e"
+    "id": "7a9abc5d-68c1-4672-a319-bd2d370ec307"
+  },
+  {
+    "newRole": {
+      "name": "finance manager",
+      "permissions": {
+        "viewTransactions": true,
+        "manageTransactions": false,
+        "viewAssets": false,
+        "manageAssets": false,
+        "reports": false,
+        "products": true,
+        "contacts": false,
+        "statements": true,
+        "pointOfSale": true
+      }
+    },
+    "id": "f2bc4660-5829-4499-9e47-30d3b089899f"
   }
 ]

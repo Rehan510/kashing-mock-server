@@ -11,6 +11,7 @@ export const findAll = async (req, res) => {
 
         // Parse invoices from the data (assuming invoices are inside an 'invoices' array)
         let documents = result.map((d, index) => {
+            console.log(d,"ssssssssssss")
             return {
                 ...d.newDocument,
                 attachment: {

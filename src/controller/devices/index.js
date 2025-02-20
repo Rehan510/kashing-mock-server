@@ -175,7 +175,20 @@ export const findAllStocks = async (req, res) => {
                         "setProduct": true,
                         "delete": true
                     }
-                }
+                },
+                {
+                    "position": 1,
+                    "product": "",
+                    "itemsPerSale": 1,
+                    "currentStock": 0,
+                    "price": "£0.00",
+                    "latestReconciliation": null,
+                    "actions": {
+                        "setProduct": true,
+                        "delete": true
+                    }
+                },
+                
                 // Additional product entries if available...
             ],
             "actions": [

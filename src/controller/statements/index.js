@@ -9,7 +9,7 @@ export const getStatements = async (req, res) => {
         const statements = await readFile(fileName); // Read file content as string
 
         // Get pagination and filter parameters from the query
-        const { page = 1, itemsPerPage = 25, from, to, status = 'Settled' } = req.query;
+        const { page = 1, itemsPerPage = 10, from, to, status = 'Settled' } = req.query;
 
         // Apply date range filter if 'from' and 'to' are provided
         let filteredStatements = statements;
@@ -40,7 +40,7 @@ export const getStatements = async (req, res) => {
         const response = {
             filters: {
                 statementType: ["Wire transfers", "Kashing Invoices", "Other"], // Static list, adjust as needed
-                store: "", // Default value, modify if necessary
+                store: "store 6", // Default value, modify if necessary
                 status: status || "Settled", // Use the status from query or default to "Settled"
                 dateRange: {
                     from: from || "2024-10-01", // Default from date
@@ -52,7 +52,8 @@ export const getStatements = async (req, res) => {
             pagination: {
                 currentPage: parseInt(page, 10),
                 totalPages: totalPages,
-                itemsPerPage: parseInt(itemsPerPage, 10)
+                itemsPerPage: parseInt(itemsPerPage, 10),
+                totalElement:23
             }
         };
 

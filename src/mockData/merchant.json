@@ -7,7 +7,7 @@
       "registrationAddress": "GB",
       "phone": "02083558340",
       "website": "https://www./",
-      "vatNumber": "",
+      "vatNumber": "val@gmail.com",
       "timeZone": "GMT+00:00 UTC"
     },
     "eCommerce": {
@@ -33,7 +33,7 @@
         "country": "GB"
       },
       "newBillingAddress": {
-        "email": ""
+        "email": "salman@gmail.com"
       }
     }
   }

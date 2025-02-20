@@ -8,6 +8,7 @@ export const findAll = async (req, res) => {
 
         // Map the data into the desired response format
         const mappedTaxRates = taxRatesData.map(taxRate => ({
+            id:taxRate.id,
             name: taxRate.taxInfo.name,
             value: taxRate.taxingDetails.value,
             taxType: taxRate.taxingDetails.taxType,

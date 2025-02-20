@@ -41,9 +41,9 @@ export const findAll = async (req, res) => {
                     scheduledTo: ""
                 },
                 customerDetails: {
-                    contact: "",
-                    email: "",
-                    phone: ""
+                    contact: "03228596741",
+                    email: "ahsan@gamil.com",
+                    phone: "03214785963"
                 },
                 location: {
                     store: "",

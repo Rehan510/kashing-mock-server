@@ -31,6 +31,7 @@ export const findAll = async (req, res) => {
             },
             users: paginatedUsers.map(user => {
                 return {
+                    id: user.id,
                     name: user.userInfo.name,
                     userType: "Store Employee",  // This can be adjusted if needed
                     since: new Date().toISOString(),  // This could be the date when the user was created

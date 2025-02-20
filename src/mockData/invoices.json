@@ -15,7 +15,7 @@
             "description": "Chargeback Handling Fee - Trx ID dZUotW9clFS - card ending 2925",
             "amount": "£18.00",
             "paymentMethod": "Wallet GBP Wallet",
-            "paid": true,
+            "paid": false,
             "actions": {
                 "viewInvoice": "View Invoice"
             }

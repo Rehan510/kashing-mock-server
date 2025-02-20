@@ -134,6 +134,7 @@ export const add = async (req, res) => {
         await writeFile(fileName, result)
         res.status(201).json(body);
     } catch (error) {
+        console.log(error.message)
         res.status(500).json({ message: 'Error adding' });
     }
 };

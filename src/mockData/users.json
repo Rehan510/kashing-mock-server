@@ -1,32 +1,21 @@
 [
   {
     "userInfo": {
-      "name": "ok",
+      "name": "store 17",
       "email": "",
       "phone": "",
       "dateOfBirth": "",
-      "skipVerification": false
+      "skipVerification": true
     },
     "storePermissions": {
       "isAccountManager": false,
       "stores": [
         {
-          "storeName": "Epsom Downs",
-          "roles": {
-            "accountant": false,
-            "merchant": true,
-            "noAccess": false,
-            "salesman": false,
-            "siteManager": false,
-            "technician": false
-          }
-        },
-        {
-          "storeName": "Padiham",
+          "storeName": "Store 16",
           "roles": {
             "accountant": false,
             "merchant": false,
-            "noAccess": true,
+            "noAccess": false,
             "salesman": true,
             "siteManager": false,
             "technician": false
@@ -38,7 +27,44 @@
   },
   {
     "userInfo": {
-      "name": "",
+      "name": "salman ali",
+      "email": "",
+      "phone": "",
+      "dateOfBirth": "",
+      "skipVerification": true
+    },
+    "storePermissions": {
+      "isAccountManager": true,
+      "stores": [
+        {
+          "storeName": "Epsom Downs",
+          "roles": {
+            "accountant": false,
+            "merchant": false,
+            "noAccess": true,
+            "salesman": false,
+            "siteManager": false,
+            "technician": false
+          }
+        },
+        {
+          "storeName": "Padiham",
+          "roles": {
+            "accountant": true,
+            "merchant": false,
+            "noAccess": false,
+            "salesman": false,
+            "siteManager": false,
+            "technician": false
+          }
+        }
+      ]
+    },
+    "id": "b0a4fbf4-fb8a-4780-95ba-24faf867d722"
+  },
+  {
+    "userInfo": {
+      "name": "store 20",
       "email": "",
       "phone": "",
       "dateOfBirth": "",
@@ -48,29 +74,18 @@
       "isAccountManager": false,
       "stores": [
         {
-          "storeName": "Epsom Downs",
+          "storeName": "Store 16",
           "roles": {
-            "accountant": false,
-            "merchant": true,
+            "accountant": true,
+            "merchant": false,
             "noAccess": false,
             "salesman": false,
-            "siteManager": false,
-            "technician": false
-          }
-        },
-        {
-          "storeName": "Padiham",
-          "roles": {
-            "accountant": false,
-            "merchant": false,
-            "noAccess": true,
-            "salesman": true,
             "siteManager": false,
             "technician": false
           }
         }
       ]
     },
-    "id": "0163a9f5-17ce-43e8-bab3-6562c21f3aab"
+    "id": "9b2ab726-3e3f-4033-8625-8ef0eb0ed02d"
   }
 ]

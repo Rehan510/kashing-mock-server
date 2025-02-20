@@ -2,9 +2,9 @@
   {
     "wallet": {
       "info": {
-        "name": "Wallet 2",
+        "name": "Wallet 23",
         "currency": "GBP",
-        "isDefault": false
+        "isDefault": true
       },
       "deposits": {
         "currentDeposit": "£0.00",
@@ -16,22 +16,57 @@
         "accountNumberConfirmation": "",
         "country": "United Kingdom",
         "sortCode": ""
-      },
-      "actions": [
-        {
-          "action": "edit",
-          "icon": "pencil",
-          "tooltip": "Tooltip text "
-        }
-      ]
+      }
     },
-    "id": "51612dc6-8f3a-43dd-911b-cda848808472"
+    "id": "d7d6eb8f-21cb-4405-a5ef-577e6493ea8c"
   },
   {
     "wallet": {
       "info": {
-        "name": "Wallet 2",
-        "currency": "GBP",
+        "name": "Wallet 28",
+        "currency": "GDB",
+        "isDefault": true
+      },
+      "deposits": {
+        "currentDeposit": "",
+        "depositToKeep": "0.00"
+      },
+      "bankAccount": {
+        "accountName": "Ahsan account",
+        "accountNumber": "",
+        "accountNumberConfirmation": "",
+        "country": "GDB",
+        "sortCode": ""
+      }
+    },
+    "id": "7376faf7-5ba1-4842-a761-c745a7fa71db"
+  },
+  {
+    "wallet": {
+      "info": {
+        "name": "Wallet 30",
+        "currency": "GDB",
+        "isDefault": false
+      },
+      "deposits": {
+        "currentDeposit": "",
+        "depositToKeep": "0.00"
+      },
+      "bankAccount": {
+        "accountName": "Ali account",
+        "accountNumber": "",
+        "accountNumberConfirmation": "",
+        "country": "",
+        "sortCode": ""
+      }
+    },
+    "id": "edf0c754-b2db-427c-b8f7-e8439c4676e1"
+  },
+  {
+    "wallet": {
+      "info": {
+        "name": "wallet 32",
+        "currency": "",
         "isDefault": false
       },
       "deposits": {
@@ -42,17 +77,10 @@
         "accountName": "",
         "accountNumber": "",
         "accountNumberConfirmation": "",
-        "country": "United Kingdom",
+        "country": "",
         "sortCode": ""
-      },
-      "actions": [
-        {
-          "action": "edit",
-          "icon": "pencil",
-          "tooltip": "Tooltip text "
-        }
-      ]
+      }
     },
-    "id": "da3e24ab-0542-4158-9c11-7db2cf87fd11"
+    "id": "5c9bf282-94b9-46c0-bf46-04e9ffa76117"
   }
 ]
