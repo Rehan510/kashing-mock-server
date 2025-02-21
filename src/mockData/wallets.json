@@ -2,7 +2,7 @@
   {
     "wallet": {
       "info": {
-        "name": "Wallet 23",
+        "name": "Wallet 28",
         "currency": "GBP",
         "isDefault": true
       },
@@ -11,11 +11,11 @@
         "depositToKeep": "0.00"
       },
       "bankAccount": {
-        "accountName": "",
-        "accountNumber": "",
-        "accountNumberConfirmation": "",
+        "accountName": "ABCD",
+        "accountNumber": "124412",
+        "accountNumberConfirmation": "1231241",
         "country": "United Kingdom",
-        "sortCode": ""
+        "sortCode": "12"
       }
     },
     "id": "d7d6eb8f-21cb-4405-a5ef-577e6493ea8c"
@@ -82,5 +82,26 @@
       }
     },
     "id": "5c9bf282-94b9-46c0-bf46-04e9ffa76117"
+  },
+  {
+    "wallet": {
+      "info": {
+        "name": "news",
+        "currency": "12",
+        "isDefault": false
+      },
+      "deposits": {
+        "currentDeposit": "£0.00",
+        "depositToKeep": "0.00"
+      },
+      "bankAccount": {
+        "accountName": "this ",
+        "accountNumber": "123123",
+        "accountNumberConfirmation": "2132",
+        "country": "20",
+        "sortCode": "13"
+      }
+    },
+    "id": "bf82d668-26c8-44d3-8cdb-4ef0330e9947"
   }
 ]

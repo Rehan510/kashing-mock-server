@@ -5,9 +5,9 @@
       "permissions": {
         "viewTransactions": true,
         "manageTransactions": true,
-        "viewAssets": false,
+        "viewAssets": true,
         "manageAssets": false,
-        "reports": false,
+        "reports": true,
         "products": false,
         "contacts": false,
         "statements": false,
@@ -60,19 +60,19 @@
   },
   {
     "newRole": {
-      "name": "finance manager",
+      "name": "pakistan",
       "permissions": {
-        "viewTransactions": true,
+        "viewTransactions": false,
         "manageTransactions": false,
         "viewAssets": false,
         "manageAssets": false,
         "reports": false,
-        "products": true,
+        "products": false,
         "contacts": false,
-        "statements": true,
-        "pointOfSale": true
+        "statements": false,
+        "pointOfSale": false
       }
     },
-    "id": "f2bc4660-5829-4499-9e47-30d3b089899f"
+    "id": "12d13316-b425-489e-aff0-85cb867cccc8"
   }
 ]

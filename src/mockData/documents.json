@@ -1,11 +1,12 @@
 [
   {
     "newDocument": {
-      "title": "201117 - Due Diligence - Supporting documentation",
-      "description": "Ifan Beynon-Thomas DOB 03.06.1991 - Drivers lic.",
+      "date":"2020-01-01T00:00:00",
+      "title": "documentation201117 - Due Diligence - Supporting documentation",
+      "content": "Ifan Beyndocumentationon-Thomas DOB 03.06.1991 - Drivers lic.",
       "attachment": {
-        "fileName": "",
-        "fileData": ""
+        "fileName": "abcd.pdf",
+        "fileData": "https//example.pdf"
       }
     },
     "actions": [
@@ -19,11 +20,12 @@
   },
   {
     "newDocument": {
-      "title": "",
-      "description": "",
+      "date":"2020-01-01T00:00:00",
+      "title": "documentation",
+      "content": "documentation",
       "attachment": {
-        "fileName": "",
-        "fileData": ""
+        "fileName": "abcd.pdf",
+        "fileData": "https//example.pdf"
       }
     },
     "actions": [
@@ -37,11 +39,12 @@
   },
   {
     "newDocument": {
-      "title": "",
-      "description": "",
+      "date":"2020-01-01T00:00:00",
+      "title": "documentation",
+      "content": "documentation",
       "attachment": {
-        "fileName": "",
-        "fileData": ""
+        "fileName": "abcd.pdf",
+        "fileData": "https//example.pdf"
       }
     },
     "actions": [
@@ -55,11 +58,12 @@
   },
   {
     "newDocument": {
-      "title": "",
-      "description": "",
+      "date":"2020-01-01T00:00:00",
+      "title": "documentation",
+      "content": "documentation",
       "attachment": {
-        "fileName": "ali doucment",
-        "fileData": ""
+        "fileName": "ali doucabcd.pdfment",
+        "fileData": "https//example.pdf"
       }
     },
     "actions": [
@@ -73,11 +77,12 @@
   },
   {
     "newDocument": {
-      "title": "",
-      "description": "",
+      "date":"2020-01-01T00:00:00",
+      "title": "documentation",
+      "content": "documentation",
       "attachment": {
-        "fileName": "ali doucment",
-        "fileData": ""
+        "fileName": "ali doucabcd.pdfment",
+        "fileData": "https//example.pdf"
       }
     },
     "actions": [
@@ -91,11 +96,12 @@
   },
   {
     "newDocument": {
-      "title": "201117 - Due Diligence - Supporting documentation",
-      "description": "Ifan Beynon-Thomas DOB 03.06.1991 - Drivers lic.",
+      "date":"2020-01-01T00:00:00",
+      "title": "documentation201117 - Due Diligence - Supporting documentation",
+      "content": "Ifan Beyndocumentationon-Thomas DOB 03.06.1991 - Drivers lic.",
       "attachment": {
-        "fileName": "",
-        "fileData": ""
+        "fileName": "abcd.pdf",
+        "fileData": "https//example.pdf"
       }
     },
     "actions": [
@@ -109,11 +115,12 @@
   },
   {
     "newDocument": {
-      "title": "",
-      "description": "",
+      "date":"2020-01-01T00:00:00",
+      "title": "documentation",
+      "content": "documentation",
       "attachment": {
-        "fileName": "ali doucment",
-        "fileData": ""
+        "fileName": "ali doucabcd.pdfment",
+        "fileData": "https//example.pdf"
       }
     },
     "actions": [
@@ -127,11 +134,12 @@
   },
   {
     "newDocument": {
-      "title": "salman document",
-      "description": "",
+      "date":"2020-01-01T00:00:00",
+      "title": "documentationsalman document",
+      "content": "documentation",
       "attachment": {
-        "fileName": "ali doucment",
-        "fileData": ""
+        "fileName": "ali doucabcd.pdfment",
+        "fileData": "https//example.pdf"
       }
     },
     "actions": [
@@ -145,11 +153,12 @@
   },
   {
     "newDocument": {
-      "title": "salman document",
-      "description": "",
+      "date":"2020-01-01T00:00:00",
+      "title": "documentationsalman document",
+      "content": "documentation",
       "attachment": {
-        "fileName": "ali doucment",
-        "fileData": ""
+        "fileName": "ali doucabcd.pdfment",
+        "fileData": "https//example.pdf"
       }
     },
     "actions": [
